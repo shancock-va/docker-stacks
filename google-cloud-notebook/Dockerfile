@@ -12,12 +12,13 @@ RUN pip install --upgrade setuptools --ignore-installed
 RUN pip install 'google-api-python-client'
 RUN pip install --upgrade google-cloud
 RUN pip install --upgrade google-cloud-bigquery
+RUN pip install --upgrade oauth2client
 
 # Install 2.7 version
-RUN bash -c "source activate python2 && pip install 'google-api-python-client'"
-RUN bash -c "source activate python2 && pip install 'google-api-python-client'"
-RUN bash -c "source activate python2 && pip install 'google-cloud'"
-RUN bash -c "source activate python2 && pip install 'google-cloud-bigquery'"
+RUN pip install 'google-api-python-client'
+RUN pip install 'google-api-python-client'
+RUN pip install 'google-cloud'
+RUN pip install 'google-cloud-bigquery'
 
 # Set google application environment variable so we can login without issue
 ENV GOOGLE_APPLICATION_CREDENTIALS=/home/jovyan/work/VendastaBizOps-key.json
