@@ -20,6 +20,17 @@ RUN pip install --upgrade google-cloud-bigquery
 RUN pip install --upgrade oauth2client
 
 RUN pip install 'pandas-gbq'
+RUN pip install --upgrade jupyterlab
+
+RUN jupyter labextension install @jupyterlab/toc
+
+RUN jupyter labextension install @jupyterlab/git
+RUN pip install --upgrade jupyterlab-git
+RUN jupyter serverextension enable --py jupyterlab_git
+
+RUN jupyter labextension install @ijmbarr/jupyterlab_spellchecker
+
+
 
 # Set google application environment variable so we can login without issue
 ENV GOOGLE_APPLICATION_CREDENTIALS=/home/jovyan/work/VendastaBizOps-key.json
