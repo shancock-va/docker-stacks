@@ -22,6 +22,8 @@ RUN pip install --upgrade oauth2client
 RUN pip install 'pandas-gbq'
 RUN pip install --upgrade jupyterlab
 
+RUN pip install pyarrow
+
 RUN jupyter labextension install @jupyterlab/toc
 
 RUN jupyter labextension install @jupyterlab/git
