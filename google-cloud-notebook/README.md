@@ -1,8 +1,11 @@
 # Google Cloud Notebook
 
-This docker container set's up what you need in order to run a Jupyter Notebook as a docker container that works well with Google Cloud.
+This docker container sets up what you need in order to run a Jupyter Notebook as a docker container that works well with Google Cloud.
 
 ## Get Started
+
+### Download Docker
+[Download and install docker](https://docs.docker.com/docker-for-mac/install/) if you don't have it.
 
 ### Checkout Docker Stacks
 Checkout the parent repo that you are already looking in (https://github.com/shancock-va/docker-stacks).
@@ -16,6 +19,6 @@ This command may take a while depending on whether or not you have the proper do
 
 
 ### Start Jupyter Notebook
-From the docker stacks direct you just checkouted run the following command
+From the docker stacks direct you just checkouted run the following command (replace `~/github/bizops-datalab` with the path to the location of your notebook files).
 
 `docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v ~/github/bizops-datalab:/home/jovyan/work google-cloud-notebook`
