@@ -26,10 +26,6 @@ RUN pip install pyarrow
 
 RUN jupyter labextension install @jupyterlab/toc
 
-RUN jupyter labextension install @jupyterlab/git
-RUN pip install --upgrade jupyterlab-git
-RUN jupyter serverextension enable --py jupyterlab_git
-
 RUN jupyter labextension install @ijmbarr/jupyterlab_spellchecker
 
 
