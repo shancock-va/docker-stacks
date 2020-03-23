@@ -7,8 +7,8 @@ This docker container sets up what you need in order to run a Jupyter Notebook a
 ### Download Docker
 [Download and install docker](https://docs.docker.com/docker-for-mac/install/) if you don't have it.
 
-### Checkout Docker Stacks
-Checkout the parent repo that you are already looking in (https://github.com/shancock-va/docker-stacks).
+### Clone Docker Stacks
+Clone the parent repo that you are already looking in (https://github.com/shancock-va/docker-stacks).
 
 ### Building Your Docker Container
 From the docker stacks directory you just checked out run the following command
