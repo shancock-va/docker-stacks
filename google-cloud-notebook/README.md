@@ -19,6 +19,6 @@ This command may take a while depending on whether or not you have the proper do
 
 
 ### Start Jupyter Notebook
-From the docker stacks direct you just checkouted run the following command (replace `~/github/bizops-datalab` with the path to the location of your notebook files).
+From the docker stacks direct you just checkouted run the following command (replace `~/github/` with the path to the location of your notebook files).
 
-`docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v ~/github/bizops-datalab:/home/jovyan/work google-cloud-notebook`
+`docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v ~/github/:/home/jovyan/work google-cloud-notebook`

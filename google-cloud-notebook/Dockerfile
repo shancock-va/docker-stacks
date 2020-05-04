@@ -28,7 +28,9 @@ RUN jupyter labextension install @jupyterlab/toc
 
 RUN jupyter labextension install @ijmbarr/jupyterlab_spellchecker
 
+RUN jupyter labextension install @jupyterlab/debugger
 
+RUN pip install xeus-python
 
 # Set google application environment variable so we can login without issue
 ENV GOOGLE_APPLICATION_CREDENTIALS=/home/jovyan/work/VendastaBizOps-key.json
