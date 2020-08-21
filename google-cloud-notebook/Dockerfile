@@ -23,6 +23,7 @@ RUN pip install 'pandas-gbq'
 RUN pip install --upgrade jupyterlab
 
 RUN pip install pyarrow
+RUN pip install install great_expectations
 
 RUN jupyter labextension install @jupyterlab/toc
 
