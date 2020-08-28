@@ -13,7 +13,7 @@ Clone the parent repo that you are already looking in (https://github.com/shanco
 ### Building Your Docker Container
 From the docker stacks directory you just checked out run the following command
 
-`docker build google-cloud-notebook --name google-cloud-notebook -t google-cloud-notebook -f google-cloud-notebook/Dockerfile`
+`docker build google-cloud-notebook -t google-cloud-notebook -f google-cloud-notebook/Dockerfile`
 
 This command may take a while depending on whether or not you have the proper docker images already. If you don't they will be downloaded for you.
 
@@ -21,4 +21,4 @@ This command may take a while depending on whether or not you have the proper do
 ### Start Jupyter Notebook
 From the docker stacks direct you just checkouted run the following command (replace `~/github/` with the path to the location of your notebook files).
 
-`docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v ~/github/:/home/jovyan/work google-cloud-notebook`
+`docker run --rm -p 8888:8888 --name google-cloud-notebook -e JUPYTER_ENABLE_LAB=yes -v ~/github/:/home/jovyan/work google-cloud-notebook`
