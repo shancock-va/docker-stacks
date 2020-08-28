@@ -13,7 +13,7 @@ Clone the parent repo that you are already looking in (https://github.com/shanco
 ### Building Your Docker Container
 From the docker stacks directory you just checked out run the following command
 
-`docker build google-cloud-notebook -t google-cloud-notebook -f google-cloud-notebook/Dockerfile`
+`docker build google-cloud-notebook --name google-cloud-notebook -t google-cloud-notebook -f google-cloud-notebook/Dockerfile`
 
 This command may take a while depending on whether or not you have the proper docker images already. If you don't they will be downloaded for you.
 
